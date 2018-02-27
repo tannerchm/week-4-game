@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Crystal Collector</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Reset CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+
+    <!-- BootStrap -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+     <!-- My CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+
+    <!-- jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+   <!-- My JavaScript -->
+    <script src="assets/javascript/game.js"></script>
+</head>
+
+
+<body>
+
+    <div id="game-instructions">
+        
+        <div class= text-center>
+        <h1>Indiana Jones' Artifact Collector</h1>
+
+            <p>You will be given a random number at the start of the game.</p>
+
+            <p>There are four crystals from Indy's collection below. By clicking on an artifact, you will add a specific amount of points to your total score.</p>
+
+            <p>You win the game by matching your total score to a random number, you lose the game if your total score goes above the random number.</p>
+
+            <p>The value of each crystal is hidden from you until you click on it.</p>
+
+            <p>Each time the game starts, the game will change the values of each crystal.</p>
+    </div>
+    </div>
+
+
+<!-- The randomly generated number you are trying to get to -->
+    <div id="random-number">
+            <div class = "container" >
+                    <div class = "row">
+                        <div class="col-sm-3 col-lg-3 mx-auto">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h2 class="panel-title">Make your values equal this</h2>
+                                    <div class="panel-body text-center"><div id=rand-num-html><h1></h1></div></div>
+                                </div>
+                            </div>
+                        </div>
+                                
+
+                                <!-- Score of user's crystals -->
+                                            <div class = "col-sm-3 col-lg-3">                         
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading">
+                                                        <h4 class="panel-title">Your value so far is</h4>
+                                                                <div class="panel-body text-center"><div id=user-total></div></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                
+                                                <!-- Losses -->
+                                                <div class = "col-sm-2 col-lg-2">                         
+                                                        <div class="panel panel-default">
+                                                            <div class="panel-heading">
+                                                                <h4 class="panel-title">Losses</h4>
+                                                                    <div class="panel-body text-center"><div id=losses></div></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                     
+     
+
+
+<!-- The "crystal" buttons you will need to press to get to the random number -->
+<!-- grab image from internet and make an id to be clickable -->
+    <div id="gem-box">
+    <div class = "container">
+            <div class = "row">
+                <div class = "col-md-6 col-lg-6">                         
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title text-center">Pick a Precious Gemstone</h3>
+                        </div>
+                            <div class="panel-body text-center">
+
+                                <!-- Diamond -->
+                                <button id="button-1" value="1" class="btn-link"><img src="assets/images/diamond.png" width="75"></button>
+                                <!-- Emerald -->
+                                <button id="button-2" value="1" class="btn-link"><img src="assets/images/emerald.png" width="75"></button>
+                                <!-- Ruby -->
+                                <button id="button-3" value="1" class="btn-link"><img src="assets/images/ruby.png" width="75"></button>
+                                <!-- Sapphire -->
+                                <button id="button-4" value="1" class="btn-link"><img src="assets/images/sapphire.png" width="75"></button>
+                                  
+                            </div>
+                         </div>
+                    </div>
+                            <!-- Wins -->
+                            <div class = "col-sm-2 col-lg-2">                         
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">Wins</h4>
+                                                <div class="panel-body text-center"><div id=wins></div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+            </div>
+        </div>
+    </div>
+    
+
+                        
+</body>
+</html>

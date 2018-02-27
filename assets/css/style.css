@@ -1,0 +1,10 @@
+body{
+    background-image: url("../images/wood-texture.jpg");
+}
+
+#game-instructions{
+    margin: auto;
+   width: 70%;
+   height: 200px;
+   background-image: url("../images/Parchment.jpg")
+}
